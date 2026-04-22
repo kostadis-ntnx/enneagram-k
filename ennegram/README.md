@@ -25,7 +25,7 @@ From `Engram_v01_Workspace`:
 - `ENNEGRAM_TARGET_ROOT=/path/to/repo python3 ennegram_cli.py memory-log --tail 20`
 - `ENNEGRAM_TARGET_ROOT=/path/to/repo python3 ennegram_cli.py sync-mempalace --mark-synced`
 
-Recall behavior is wiki-first: it returns matches from `ennegram/wiki` first, then appends code/docs fallback matches from paths configured in `ennegram/config/ennegram.yaml` against `ENNEGRAM_TARGET_ROOT`.
+Recall behavior is wiki-first: it returns matches from the configured per-repo wiki root first, then appends code/docs fallback matches from paths configured in `ennegram/config/ennegram.yaml` against `ENNEGRAM_TARGET_ROOT`.
 `init --data-root ...` is required once per target repo; `--wiki-root` is optional and defaults to `<data-root>/wiki`. The mapping is then reused automatically.
 Use `--mode code` when wiki is sparse and you want implementation-first retrieval.
 
