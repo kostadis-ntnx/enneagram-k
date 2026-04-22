@@ -1,0 +1,17 @@
+project_name: "CampaignGenerator-ennegram-v0.1"
+canonical_root: "configured via init --wiki-root (defaults to <data-root>/wiki)"
+schema_root: "ennegram/schema"
+reports_root: "configured via init --data-root"
+logs_root: "configured via init --data-root"
+
+validation:
+  freshness_days: 30
+  require_owner: true
+  require_last_validated_at: true
+  require_source_refs: true
+
+recall:
+  min_confidence_to_assert: 0.6
+  max_results: 5
+  fallback_paths: "README.md,CLAUDE.md,SESSION_DOC_PIPELINE.md,SCENE_EXTRACTION.md,planning.py,session_doc.py,quote_ledger.py,config,server,frontend/src"
+  fallback_max_files: 300

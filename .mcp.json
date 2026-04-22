@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ennegram": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["/Users/kostadis.roussos/Documents/Engram_v01_Workspace/ennegram_mcp_server.py"],
+      "env": {
+        "ENNEGRAM_TARGET_ROOT": "/Users/kostadis.roussos/Documents/CampaignGenerator"
+      }
+    }
+  }
+}
